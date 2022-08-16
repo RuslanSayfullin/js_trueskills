@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts.Oswald-Regular.ttf")
+}
+
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    margin-left: -150px;
+}
+#back-top a {
+    width: 108px;
+    display: block;
+    text-align: center;
+    font: 11px/100% "Oswald";
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#bbb;
+    transition: 1s;
+}
+#back-top a:hover {
+    color: #000;
+}
+/*стрелка наверх, тэг span*/
+#back-top span{
+    width: 108px;
+    height: 108px;
+    display: block;
+    margin-bottom: 7px;
+    background: #ddd url("../img/arrow-up.png") no-repeat center center;
+    border-radius: 7px;
+    transition: 1s;
+}
+#back-top a:hover span {
+    background-color: #777;
+}
