@@ -5,7 +5,7 @@ $(function(){
         }, 500);
     }, function(){
             $(this).find("img").stop().animate({
-                tio: 0
+                top: 0
             }, 500);
     });
 });

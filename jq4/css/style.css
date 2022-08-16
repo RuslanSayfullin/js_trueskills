@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 150%;
+    background-color: #6081c4;
+}
+h1{
+    margin-bottom: 750px;
+    font-size: 18px;
+}
+#container{
+    width: 750px;
+    margin: 200px auto;
+}
+div.slidebox{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: left;
+    margin-right: 25px;
+    overflow: hidden;
+    border: 5px solid #ccc;
+}
+div.slidebox img{
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+}
+div.slidebox div.content{
+    position: center;
+    z-index: 1;
+    padding: 10px;
+}
