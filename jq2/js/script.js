@@ -1,21 +1,11 @@
 $(document).ready(function(){
-    //скрываем #back-top
-    $('#back-top').hide();
-    // появление #back-top
-    $(function (){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('#back-top').fadeIn();
-            } else {
-                $('#back-top').fadeOut();
-            }
-        });
-
-        $('#back-top a').click(function(){
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
+    $('li').click(function(){
+        var number = $(this).index();
+        $('h2').slideUp(400).eq(number).slideDown(400);
+        $('p').slideUp(400).eq(number).slideDown(400);
+        $('li').removeClass('inactive').addClass('active');
+        $('li').not(this).removeClass('active').addClass('inactive');
     });
-});
+    $('h2').not(':first').hide();
+    $('p').not(':first').hide();
+});    
