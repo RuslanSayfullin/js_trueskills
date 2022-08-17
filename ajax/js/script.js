@@ -20,5 +20,16 @@ $(document).ready(function() {
             $('#messageShow').show();
             return false;
         } 
+        $.ajax ({
+            url: 'php/index.php',
+            type: 'POST',
+            cache: false,
+            data: {'name':name, 'email': email, 'subject': subject, 'message': message},
+            dataType: 'html',
+            success: function(data) {
+                $('#messageShow').html(data + "<div class='clear'><br></div>");
+                $('#messageShow').show();
+            }
+        })
     });
 });
