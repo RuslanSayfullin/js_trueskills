@@ -21,8 +21,46 @@ body {
     margin-left: 10%;
     float: left;
 }
-#wrapper #leftCol {
+#wrapper #lefCol {
     width: 70%;
     margin-right: 10%;
     float: left;
+}
+#wrapper #lefCol input {
+    width: 40%;
+    margin-left: 30%;
+    float: left;
+    border-radius: 5px;
+    padding: 5px;
+    color: #afebf8;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+#wrapper #lefCol input:focus,
+#wrapper #lefCol textarea:focus {
+    border: 2px solid #f78080;
+}
+#wrapper #lefCol input#done:hover {
+    border: 2px solid #f8d881;
+    cursor: pointer;
+}
+#wrapper #lefCol textarea {
+    width: 50%;
+    height: 150px;
+    margin-left: 25%;
+    float: left;
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    color: #afebf8;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    resize: none;
+}
+#wrapper #lefCol #messageShow {
+    font-size: 1.2em;
+    float: left;
+    color: red;
+    width: 100%;
+    text-align: center;
 }
