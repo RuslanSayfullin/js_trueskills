@@ -24,12 +24,12 @@ $(document).ready(function() {
             url: 'php/index.php',
             type: 'POST',
             cache: false,
-            data: {'name':name, 'email': email, 'subject': subject, 'message': message},
+            data: {'name': name, 'email': email, 'subject': subject, 'message': message},
             dataType: 'html',
             success: function(data) {
                 $('#messageShow').html(data + "<div class='clear'><br></div>");
                 $('#messageShow').show();
             }
-        })
+        });
     });
 });
